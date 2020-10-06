@@ -714,7 +714,7 @@
 								<label>$INFO[ListItem.Path]</label>
 								<label2>$LOCALIZE[573]:</label2>
 								<onclick>Dialog.Close(movieinformation)</onclick>
-								<onclick>ActivateWindow(Videos,$INFO[ListItem.Path],return)</onclick>
+								<onclick>ActivateWindow(Videos,$ESCINFO[ListItem.Path],return)</onclick>
 								<visible>!String.IsEqual(ListItem.DBTYPE,set) + !String.IsEmpty(ListItem.Path) + !Skin.HasSetting(Disable.VideoInfoPathDetails)</visible>
 							</item>
 							<item>
